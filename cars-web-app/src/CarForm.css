@@ -1,0 +1,76 @@
+.form-container {
+    padding: 100px var(--padding-base) var(--padding-base);
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-control label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--color-text-dark);
+    }
+
+    .form-control input,
+    .form-control select {
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        transition: border-color 0.2s;
+    }
+
+        .form-control input:focus,
+        .form-control select:focus {
+            border-color: var(--color-primary);
+            outline: none;
+        }
+
+.form-actions {
+    padding-top: 1rem;
+}
+
+.btn-submit {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 1rem;
+}
+
+    .btn-submit:hover {
+        background-color: var(--color-primary-dark);
+    }
+
+.btn-cancel {
+    background-color: #cccccc;
+    color: var(--color-text-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+    .btn-cancel:hover {
+        background-color: #aaaaaa;
+    }
